@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/global.css" />
+    <script defer src="/mastermind.js"></script>
+    <!-- <script defer src="/stepByStep.js"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/tailwind.config.js"></script>
+    <link rel="icon" href="/image/pngegg.png" />
+    <title>Mastermind</title>
+  </head>
+  <body class="h-full flex flex-col justify-evenly box-border">
+    <header
+      class="h-p10 w-full bg-boardGrey text-2xl font-medium tracking widest flex justify-center items-center text-white"
+    >
+      Let's play a game
+    </header>
+    <main class="h-p75 w-full bg-white flex justify-center items-center">
+      <div class="h-full w-96 rounded-2xl flex flex-col my-3">
+        <div
+          class="h-12 bg-boardGrey text-boardGrey rounded-xl shadow-lg shadow-dark"
+        ></div>
+        <div class="h-p100 mx-2 flex shadow-lg shadow-dark">
+          <div
+            class="w-5/6 h-full flex flex-col justify-center items-center bg-boardGrey"
+            id="gameContainer"
+          >
+            <!-- <table class="w-full h-full flex items-center justify-evenly">
+              <tr class="w-full h-full flex justify-evenly items-center py-1">
+                <td class="rounded-full h-8 w-8 border-2 mx-1"></td>
+                <td class="rounded-full h-8 w-8 border-2 mx-1"></td>
+                <td class="rounded-full h-8 w-8 border-2 mx-1"></td>
+                <td class="rounded-full h-8 w-8 border-2 mx-1"></td>
+                <td
+                  class="rounded-xl h-8 w-20 border-2 flex justify-evenly items-center"
+                >
+                  <div class="w-4 h-4 rounded-full border"></div>
+                  <div class="w-4 h-4 rounded-full border"></div>
+                  <div class="w-4 h-4 rounded-full border"></div>
+                  <div class="w-4 h-4 rounded-full border"></div>
+                </td>
+              </tr>
+            </table> -->
+          </div>
+          <div
+            class="w-1/6 h-full bg-boardBlue flex justify-center items-center"
+          >
+            <div class="rotate-90">
+              <div
+                class="rotate-180 text-6xl font-mono tracking-wider text-boardBlue drop-shadow-md"
+              >
+                MASTERMIND
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="h-16 flex justify-evenly items-center bg-boardGrey rounded-xl shadow-lg shadow-dark"
+          id="btnContainer"
+        >
+          <button
+            id="yellow"
+            class="rounded-full bg-yellow h-8 w-8 shadow-inner shadow-whiter active:scale-110"
+          ></button>
+          <button
+            id="blue"
+            class="rounded-full bg-blue h-8 w-8 shadow-inner shadow-whiter active:scale-110"
+          ></button>
+          <button
+            id="red"
+            class="rounded-full bg-red h-8 w-8 shadow-inner shadow-whiter active:scale-110"
+          ></button>
+          <button
+            id="green"
+            class="rounded-full bg-green h-8 w-8 shadow-inner shadow-whiter active:scale-110"
+          ></button>
+          <button
+            id="pink"
+            class="rounded-full bg-pink h-8 w-8 shadow-inner shadow-whiter active:scale-110"
+          ></button>
+          <button
+            id="purple"
+            class="rounded-full bg-purple h-8 w-8 shadow-inner shadow-whiter active:scale-110"
+          ></button>
+        </div>
+      </div>
+    </main>
+    <footer class="h-p15">
+      <div>Règles du jeu</div>
+      <div></div>
+    </footer>
+  </body>
+</html>
