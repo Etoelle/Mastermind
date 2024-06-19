@@ -32,7 +32,6 @@ function gameTableCreate() {
     for (let dex = 0; dex < 4; dex++) {
       const DIV = document.createElement("div");
       TR.lastChild.append(DIV);
-
       TR.lastChild.classList.remove(
         "rounded-full",
         "h-8",
@@ -55,3 +54,19 @@ function gameTableCreate() {
 }
 
 gameTableCreate();
+
+// TODO HTML btn replay + btn reset + btn confirm
+// Event listener sur btn rejouer pour reset la game
+// Event listener sur btn reset pour reset les couleurs choisies
+// Rendre uniquement la première ligne utilisable
+// Event listener au click sur la couleur --> cursor = couleur
+// Event listener au click sur row du jeu --> couleur appliquée et cursor normal
+// Event listener au click sur une autre couleur --> cursor = couleur
+// Event listener sur btn confirmer pour confirmer et vérifier les choix
+// for avec index --> si guessing [i] = to guess [i] alors un rond rouge dans le tableau d'indices, splice couleur choisie [i] & splice couleur to guess [i]
+// for avec index --> filter le tableau guessing avec to guess, si length du tableau de filter = 1 alors splice to guess [i], splice guessing index of color -1 et rond blanc dans le tableau d'indices
+// i++ pour continuer à jouer à la ligne suivante
+// TODO HTML Modal win avec btn replay et btn close + close possible en cliquant en dehors
+// Si tableau d'indices = 4 rouges alors modal win class list remove hidden
+// TODO HTML Modal loose avec btn replay et btn close + close possible en cliquant en dehors
+// Si guessing index = 12 alors modal loose class list remove hidden
